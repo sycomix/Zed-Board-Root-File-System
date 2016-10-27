@@ -1,2 +1,16 @@
-# Zed-Board-Root-File-System
-Xilinx All Programmable SoCs (AP SoC) are processor-centric platforms that offer software, hardware and I/O programmability in a single chip. The Zynq-7000 family is based on the All Programmable SoC architecture. Zynq-7000 products incorporate a dual core ARM Cortex-A9 based Processing System (PS) and Xilinx Programmable Logic in a single device. 
+# Zed Board Root File System
+### Steps to write sdcard image to sdcard 
+* Get a SD Card 8 GB or larger 
+* Insert the SD Card into SD Card reader 
+* run dmesg | grep sd
+* once you identity the node run the following command 
+
+    ```
+        sudo dd if=zedboard-vave-sdcard.img of=/dev/diskn bs=1M
+    ```
+* Insert the SD Card image to ZedBoard SD card slot 
+* Enjoy 
+* File a bug report if you have any problem 
+
+
+
